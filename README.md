@@ -11,3 +11,16 @@ how it will affect one person, and what quantity is allowed for a person.
 ### Architecture 🏹 
 Inspect Elements has two modules planned: an optical character recognition module and a Dataset accumulation.
 Each will work hand in hand to give out responses.
+
+
+## Dependencies
+
+|    System Linux | Dependecies required		
+|
+|    A compiler for C and C++: GCC or Clang
+|    GNU Autotools: autoconf, automake, libtool
+|    pkg-config
+|    Leptonica
+|    (optional) zlib, libpng, libjpeg, libtiff, giflib, openjpeg, webp, archive, curl
+|
+
