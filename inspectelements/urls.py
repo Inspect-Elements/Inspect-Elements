@@ -20,5 +20,5 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/images/', include('inspect_ocr.urls')),
+    path('api/', include('inspect_ocr.urls')),
 ]
