@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone 
-
+from django.urls import reverse_lazy
 from inspectelements.settings import IMAGE_DIR
 
 class Image(models.Model):
@@ -10,7 +10,7 @@ class Image(models.Model):
     as well as food_company+food_product can be used to circument the
     ocr process in the future
     """
-    
+    uid = models.AutoField(primary_key=True)
     food_product = models.CharField(
         max_length=100, help_text="Name of the food product", null=True
     )
