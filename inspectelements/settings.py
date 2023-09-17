@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 from pathlib import Path
 import environ
-
+import os
 
 
 env = environ.Env()
@@ -132,3 +132,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 IMAGE_DIR = 'images'
+MEDIA_ROOT = os.path.join(BASE_DIR, "user_data")
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
