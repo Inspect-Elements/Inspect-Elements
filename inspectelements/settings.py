@@ -9,8 +9,15 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
 from pathlib import Path
+import environ
+
+
+
+env = environ.Env()
+environ.Env.read_env(env_file=".env")
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$@=v#m3=okqhzguse2p#$!@6lbfxxi(zh*5ikzz1zic70y@hfr'
+SECRET_KEY = env.str("SECRET_KEY", "6mu60zk7_6m=kf)^01&bzrvq^j&!1te#7n7&g7((o_9c7b$+*5")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
