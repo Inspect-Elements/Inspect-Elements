@@ -10,7 +10,7 @@ If you discover a security vulnerability in Inspect-Elements, please follow thes
    
 3. **Provide Information**: Include a detailed description of the vulnerability and steps to reproduce it if possible. We appreciate any additional context you can provide.
 
-4. **Response**: We will acknowledge your report within a eeek and work to address the issue promptly.
+4. **Response**: We will acknowledge your report within a week and work to address the issue promptly.
 
 5. **Public Disclosure**: Once the issue is resolved, we will coordinate with you on a public disclosure if necessary.
 
